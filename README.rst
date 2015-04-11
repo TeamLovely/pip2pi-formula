@@ -2,7 +2,7 @@
 pip2pi
 ================
 
-Installs the `pip2pi <https://github.com/wolever/pip2pi>_` tools. The ``pip2tgz`` command can be run in a cronjob if needed by editing the appropriate pillar variables.
+Installs the `pip2pi <https://github.com/wolever/pip2pi>`_ tools. The ``pip2tgz`` command can be run in a cronjob if needed by editing the appropriate pillar variables.
 
 .. note::
 
