@@ -1,0 +1,10 @@
+pip2tgz:
+  lookup:
+    repository: '/var/www/packages/'
+    arguments: '-i https://pypi.mycompany.com/simple --pre'
+    packages: 'package1 package2'
+    user: 'pypi'
+    minute: '*/15'
+    custom_dependencies: [
+      'package1-dev',
+    ]

@@ -1,0 +1,19 @@
+{% set pip2pi = salt['grains.filter_by']({
+    'default': {
+        'pkg': 'pip2pi'
+    },
+}, merge=salt['pillar.get']('pip2pi:lookup')) %}
+
+{% set pip2tgz = salt['grains.filter_by']({
+    'default': {
+        'command': '/usr/local/bin/pip2tgz',
+        'user': 'root',
+        'minute': "'*'",
+        'hour': "'*'",
+        'daymonth': "'*'",
+        'month': "'*'",
+        'dayweek': "'*'",
+        'comment': 'The pip2tgz cron job',
+        'identifier': 'pip2tgz-cron',
+    },
+}, merge=salt['pillar.get']('pip2tgz:lookup')) %}
